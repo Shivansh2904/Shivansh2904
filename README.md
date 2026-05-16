@@ -14,7 +14,7 @@
 
 I build production systems end-to-end — from database schema to deployed API to responsive UI — and bring ML into the mix wherever it adds real value. Currently freelancing on a full-stack SaaS platform and co-founding [Fluxero](https://github.com/Flume-io), while looking for the next engineering challenge.
 
-Previously: ML research at Durham University (95.8% accuracy audio classifier published into a nationally significant public-safety programme), software engineering intern at TechTree, and BSc Computer Science at Durham.
+Previously: ML research at Durham University (95.8% accuracy audio classifier contributing to a nationally significant public-safety programme), software engineering intern at TechTree, BSc Computer Science at Durham.
 
 ---
 
@@ -60,11 +60,30 @@ Previously: ML research at Durham University (95.8% accuracy audio classifier pu
 
 ## Projects
 
-| Project | What it does | Stack |
-|---------|-------------|-------|
-| [**SoundSentinel**](https://github.com/Shivansh2904/sound-sentinel) | Real-time environmental sound classification running entirely in the browser — no server, no API key | Python · scikit-learn · ONNX · React · TypeScript |
-| [**VectorVault**](https://github.com/Shivansh2904/vector-vault) | Local-first semantic document search using RAG — upload docs, search by meaning, everything stays on your machine | FastAPI · FAISS · sentence-transformers · React · Docker |
-| [**NLPipe**](https://github.com/Shivansh2904/nlpipe) | Self-hosted NLP inference API: sentiment, NER, zero-shot classification, summarisation, keyword extraction | FastAPI · HuggingFace · TypeScript SDK · React · Docker |
+### SoundSentinel — Real-time in-browser audio classification
+> SVM + XGBoost ensemble trained on ESC-50 (95.8% accuracy), exported to ONNX and served in the browser via a React/TypeScript app — no server, no API key.
+
+| Repo | Description |
+|------|-------------|
+| [sound-sentinel-training](https://github.com/Shivansh2904/sound-sentinel-training) | Python ML pipeline: feature extraction, training, ONNX export |
+| [sound-sentinel-web](https://github.com/Shivansh2904/sound-sentinel-web) | React + ONNX Runtime Web browser app with real-time mic inference |
+
+### VectorVault — Local-first semantic document search
+> Upload documents, search by meaning. FAISS vector index + sentence-transformers. Everything runs locally — no data leaves your machine.
+
+| Repo | Description |
+|------|-------------|
+| [vector-vault-api](https://github.com/Shivansh2904/vector-vault-api) | FastAPI backend: chunking, embedding, FAISS indexing, semantic search |
+| [vector-vault-ui](https://github.com/Shivansh2904/vector-vault-ui) | React TypeScript frontend with upload, library, and search UI |
+
+### NLPipe — Self-hosted NLP inference API
+> Five NLP tasks (sentiment, NER, zero-shot, summarisation, keywords) behind one REST interface. Ships with a typed TypeScript SDK and a React playground.
+
+| Repo | Description |
+|------|-------------|
+| [nlpipe-api](https://github.com/Shivansh2904/nlpipe-api) | FastAPI server with lazy-loaded HuggingFace models |
+| [nlpipe-sdk](https://github.com/Shivansh2904/nlpipe-sdk) | TypeScript SDK with full type safety and 16 unit tests |
+| [nlpipe-playground](https://github.com/Shivansh2904/nlpipe-playground) | React UI — NER highlighting, bar charts, tag clouds per task |
 
 ---
 
