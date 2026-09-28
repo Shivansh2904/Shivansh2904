@@ -6,9 +6,9 @@ Software engineer and startup co-founder, based in London.
 
 ---
 
-Hi, I'm Shivansh. I work as a contract software engineer, the sole developer on a multi-tenant SaaS platform that I took from greenfield to client-tested staging. I'm also co-founder and lead engineer of Fluxero, a Venture School-backed green-energy startup. There I built the core product in TypeScript, React and Node.js, a Python electrolyser digital twin, and the wind model behind its energy-yield forecasts.
+Hi, I'm Shivansh. I work as a contract software engineer, the sole developer on a multi-tenant SaaS platform that I took from greenfield to client-tested staging. I'm also co-founder and lead engineer of Fluxero, a green-energy startup selected for Durham Venture School. There I built the core product in TypeScript, React and Node.js, a Python electrolyser digital twin, and the wind model behind its energy-yield forecasts.
 
-I build with AI coding agents (Claude Code and Codex) and verify what they produce, including planting a bug to check that each test gate really catches it.
+I build with AI coding agents (Claude Code and Codex) and check what they produce, including planting bugs to make sure my test gates can actually fail.
 
 I have a BSc in Computer Science from Durham University. I've also worked as a research assistant at Durham on the EPSRC-funded CHEDDAR programme, building audio-classification pipelines in Python, and as a software engineering intern at TechTree.
 
@@ -16,6 +16,7 @@ I have a BSc in Computer Science from Durham University. I've also worked as a r
 
 ## Projects
 
+- **[ctxreach](https://github.com/Shivansh2904/ctxreach)**: shows which `AGENTS.md` and `CLAUDE.md` instruction files actually reach Codex and Claude Code from a given directory, and where Codex's size limit cuts them off. TypeScript on Node.js. Early days: the static `map` command works; a live check against the agents is next.
 - **[vector-vault](https://github.com/Shivansh2904/vector-vault)**: self-hosted semantic search over PDF, TXT, Markdown and DOCX files. MiniLM embeddings in a FAISS index, with optional cross-encoder re-ranking. Python, FastAPI, React and TypeScript.
 - **[git-chronicle](https://github.com/Shivansh2904/git-chronicle)**: a command-line tool for git-history analytics. It covers authors, an activity heatmap, file churn, streaks and branch comparison, and writes Markdown or JSON reports. TypeScript on Node.js.
 - **[sound-sentinel](https://github.com/Shivansh2904/sound-sentinel)**: a sound classifier with a Python training pipeline and a browser app. Work in progress.
@@ -24,8 +25,7 @@ I have a BSc in Computer Science from Durham University. I've also worked as a r
 
 ## Hackathons
 
-- Nozomio Hackathon, San Francisco (May 2026): competed solo at a one-day hackathon on building AI agents.
-- DurHack 2022, Durham: full-stack on a team web app suggesting energy-efficiency fixes from building sensor data.
+- DurHack 2022, Durham: full-stack on a team web app suggesting energy-efficiency improvements from sensor data.
 
 ---
 
